@@ -6,11 +6,11 @@ import ServiceCard from '../components/ServiceCard';
 
 const ServicesPage = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4">
+    <div className="max-w-4xl mx-auto px-4 md:px-6">
       <Header />
-      <main className="py-8">
-        <h2 className="text-2xl font-bold text-center">Call us on +91 9594965979</h2>
-        <p className="text-center text-gray-600 mt-2 mb-8">Below are the fantastic services we deliver for people</p>
+      <main className="py-6 md:py-8">
+        <h2 className="text-xl md:text-2xl font-bold text-center">Call us on +91 9594965979</h2>
+        <p className="text-center text-gray-600 mt-2 mb-6 md:mb-8 text-sm md:text-base">Below are the fantastic services we deliver for people</p>
         
         <ServiceCard 
           title="Hire Consultants"

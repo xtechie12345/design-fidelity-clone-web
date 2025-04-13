@@ -101,6 +101,22 @@
     @apply bg-background text-foreground;
     font-family: 'Orelega One', cursive;
   }
+
+  /* Mobile responsive font adjustments */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.75rem; /* smaller headings on mobile */
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+    p, li {
+      font-size: 0.95rem;
+    }
+  }
 }
 
 /* Custom Styles */
