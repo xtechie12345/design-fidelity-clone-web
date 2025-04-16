@@ -15,8 +15,8 @@ const Header = () => {
       <p className="text-gray-400 text-sm mb-6">Trust | Achieve | Lead</p>
       
       <div className="flex flex-wrap md:flex-nowrap justify-center gap-3 md:gap-4 w-full max-w-4xl px-4">
-        <Link to="/about" className="flex items-center justify-center gap-2 px-4 md:px-6 py-2 md:py-3 rounded-full border border-gray-300 hover:bg-gray-50 transition-colors duration-200 text-sm md:text-base w-full md:w-auto">
-          <Info size={isMobile ? 16 : 18} className="text-black" />
+        <Link to="/about" className={`flex items-center justify-center gap-2 px-4 md:px-6 py-2 md:py-3 rounded-full border hover:bg-opacity-90 transition-colors duration-200 text-sm md:text-base w-full md:w-auto ${location.pathname === '/about' ? 'bg-bubblebit-purple text-white border-bubblebit-purple' : 'border-gray-300 hover:bg-gray-50'}`}>
+          <Info size={isMobile ? 16 : 18} className={location.pathname === '/about' ? 'text-white' : 'text-black'} />
           <span className="font-medium">About us</span>
         </Link>
         <Link to="/services" className={`flex items-center justify-center gap-2 px-4 md:px-6 py-2 md:py-3 rounded-full border hover:bg-opacity-90 transition-colors duration-200 text-sm md:text-base w-full md:w-auto ${location.pathname === '/services' ? 'bg-bubblebit-purple text-white border-bubblebit-purple' : 'border-gray-300 hover:bg-gray-50'}`}>
